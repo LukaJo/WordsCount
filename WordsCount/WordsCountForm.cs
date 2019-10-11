@@ -102,7 +102,11 @@ namespace WordsCount
         {
             if (rbBaza.Checked)
             {
-                tbBaza.Text = gridIzBaze[2, e.RowIndex].Value.ToString();
+                if (gridIzBaze.Rows.Count > 0)
+                {
+                    tbBaza.Text = gridIzBaze[2, e.RowIndex].Value.ToString();
+                }
+                
             }
 
         }
