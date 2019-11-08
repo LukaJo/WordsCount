@@ -20,7 +20,7 @@ namespace WordsCount.BL
         public string GetTextFromFile(string path)
         {
             string text = File.ReadAllText(path);
-            return text;
+            return text;//test
         }
 
     }
